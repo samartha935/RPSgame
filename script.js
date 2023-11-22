@@ -3,7 +3,7 @@ let playerScore=0, computerScore=0;
 let rounds = parseInt(prompt("Enter the number of rounds you want to play : "));
 
 for (let i = 0; i < rounds; i++) {
-  let playerChoice = prompt("You Turn : Choose between Rock, Paper, Scissor");
+  let playerChoice = prompt("You Turn : ");
 
   let computerChoice = RandomComputerChoice();
 
@@ -42,7 +42,7 @@ function compare(computerChoice, playerChoice) {
   } else if (player == "paper" && computer == "scissor") {
     computerScore++;
     alert("Computer chose scissor. You lost this round.");
-  } else if (player == "scissors" && computer == "rock") {
+  } else if (player == "scissor" && computer == "rock") {
     computerScore++;
     alert("Computer chose rock. You lost this round.");
   } else if (player == "rock" && computer == "rock") {
@@ -57,13 +57,13 @@ function compare(computerChoice, playerChoice) {
 
 function decideWinner() {
   if (playerScore > computerScore) {
-    alert('You Won the Game ${playerScore - computerScore.}');
+    alert(`You Won the Game ${playerScore} - ${computerScore}.`);
   }
   else if (playerScore < computerScore) {
-    alert('You Lost the Game ${computerScore - playerScore.}');
+    alert(`You Lost the Game ${computerScore} - ${playerScore}.`);
   }
   else {
-    alert('Its a tie ${computerScore - playerScore.}');
+    alert(`Its a tie ${computerScore} - ${playerScore}.`);
   }
 
 }
