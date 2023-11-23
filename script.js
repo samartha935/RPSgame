@@ -1,4 +1,4 @@
-  playerScore=0, computerScore=0;
+let  playerScore=0, computerScore=0;
 
 let rounds = parseInt(prompt("Enter the number of rounds you want to play : "));
 
