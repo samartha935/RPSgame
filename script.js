@@ -1,9 +1,9 @@
-let playerScore=0, computerScore=0;
+  playerScore=0, computerScore=0;
 
 let rounds = parseInt(prompt("Enter the number of rounds you want to play : "));
 
 for (let i = 0; i < rounds; i++) {
-  let playerChoice = prompt("You Turn : ");
+  let playerChoice = prompt("You Turn : Enter Rock, Paper or scissor");
 
   let computerChoice = RandomComputerChoice();
 
