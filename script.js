@@ -29,28 +29,28 @@ function compare(computerChoice, playerChoice) {
 
   if (player == "rock" && computer == "scissor") {
     playerScore++;
-    alert("Computer chose scissor. You won this round.");
+    alert("Computer chose scissor. You won this round.  \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore} ");
   } else if (player == "paper" && computer == "rock") {
     playerScore++;
-    alert("Computer chose rock. You won this round.");
+    alert("Computer chose rock. You won this round.  \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}");
   } else if (player == "scissor" && computer == "paper") {
     playerScore++;
-    alert("Computer chose paper. You won this round.");
+    alert("Computer chose paper. You won this round.  \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore} ");
   } else if (player == "rock" && computer == "paper") {
-    computerScore++;
-    alert("Computer chose paper. You lost this round.");
+      playerScore++;
+    alert("Computer chose paper. You lost this round.  \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}  ");
   } else if (player == "paper" && computer == "scissor") {
     computerScore++;
-    alert("Computer chose scissor. You lost this round.");
+    alert("Computer chose scissor. You lost this round.   \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}  ");
   } else if (player == "scissor" && computer == "rock") {
     computerScore++;
-    alert("Computer chose rock. You lost this round.");
+    alert("Computer chose rock. You lost this round.   \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}  ");
   } else if (player == "rock" && computer == "rock") {
-    alert("Computer chose rock. No Points");
+    alert("Computer chose rock. No Points.   \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}  ");
   } else if (player == "paper" && computer == "paper") {
-    alert("Computer chose paper. No Points");
+    alert("Computer chose paper. No Points.   \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}  ");
   } else if (player == "scissor" && computer == "scissor") {
-    alert("Computer chose scissor. No Points");
+    alert("Computer chose scissor. No Points.   \n  Score :- \n PLAYER : ${playerScore}  COMPUTER : ${computerScore}  ");
   } else {
 alert("Invalid entry. Try again");
 }
