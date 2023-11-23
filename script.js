@@ -51,7 +51,9 @@ function compare(computerChoice, playerChoice) {
     alert("Computer chose paper. No Points");
   } else if (player == "scissor" && computer == "scissor") {
     alert("Computer chose scissor. No Points");
-  }
+  } else {
+alert("Invalid entry. Try again");
+}
 
 }
 
