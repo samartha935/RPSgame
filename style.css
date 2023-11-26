@@ -1,7 +1,4 @@
 body{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     border: 2px solid black;
     background-color: rgb(42, 66, 62)(54, 23, 23);
 
@@ -31,19 +28,25 @@ body{
 }
 
 
-.player-decision{
+
+.computer-decision{
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    font-size: x-large;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 50px ;
 
 }
 
-.computer-decision{
-    text-align: center;
-    font-size: x-large;
-    margin-top: 80px;
-    margin-bottom: 50px;
+.player-decision{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
 
+}
+
+button{
+    width: 100px;
+    height: 100px;
 }
 
